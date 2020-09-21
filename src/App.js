@@ -7,11 +7,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Home from './Component/Home/Home';
 
 function App() {
   return (
     <div className="App">
-     <h1 className="text-danger">hello </h1>
+     
+     <Home></Home>
     </div>
   );
 }

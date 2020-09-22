@@ -2,6 +2,7 @@ import React from 'react';
 import '../Home/Home.css'
 import { Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Manu from '../Manu/Manu';
 
 const Home = () => {
     const onlineImgUrl = 'https://i.ibb.co/sjfcLR4/Rectangle-1.png';
@@ -13,10 +14,12 @@ const Home = () => {
         backgroundPosition: "center"
     }
     return (
+    
         <div  className="Home-bg" style={imgStyle} >
-            <h1>this is home ccc page</h1>
+            {/* <h1>this is home ccc page</h1> */}
+             <Manu></Manu>
 
-            <CardDeck >
+            <CardDeck className="customdeck" >
    <Card className="CustomCard">
      <Card.Img variant="top" src="https://i.ibb.co/sjfcLR4/Rectangle-1.png" />
      <Card.Body>
@@ -24,9 +27,9 @@ const Home = () => {
      <Card.Title>COX'S Bazar</Card.Title>
      </Card.Body>
      <Card.Footer>
-     {/* <Link to="/coxsbazar"> */}
+     <Link to="/Coxbazer">
          <button className='buttonStyle bg-primary' >Book Here</button>
-         {/* </Link> */}
+          </Link>
      </Card.Footer>
 </Card>
 {/* 1st card */}
@@ -37,9 +40,9 @@ const Home = () => {
       
      </Card.Body>
      <Card.Footer>
-     {/* <Link to="/sundarban"> */}
+     <Link to="/Sundorban">
          <button className='buttonStyle bg-danger'>Book Here</button>
-         {/* </Link> */}
+          </Link> 
      </Card.Footer>
    </Card>
 
@@ -50,9 +53,9 @@ const Home = () => {
        
      </Card.Body>
      <Card.Footer>
-     {/* <Link to="/sreemangal"> */}
+      <Link to="/Sremongul">
          <button className='buttonStyle bg-info'>Book Here</button>
-         {/* </Link> */}
+          </Link> 
      </Card.Footer>
    </Card>
  </CardDeck>

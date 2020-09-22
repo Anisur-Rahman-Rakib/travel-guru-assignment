@@ -10,8 +10,9 @@ const Manu = () => {
           <div>
           <nav>
                <Link to="/shop">shop</Link>
-               <Link to="/review">order Review</Link>
-               <Link to="Inventory">manage inventory</Link>
+               <Link to="/Coxbazer">Coxbazer</Link>
+               <Link to="Sundorban">Sundorban</Link>
+               <Link to="Sremongul">Sremongul</Link>
                {/* <button onClick={() => setloggedInUser({})}>sign out</button> */}
            </nav> 
           </div>

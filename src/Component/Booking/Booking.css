@@ -1,0 +1,20 @@
+.bookingFromdesign{
+    border:3px solid yellow;
+    border-radius: 10px;
+
+}
+.fromDesign{
+    background-color: #fff;
+    padding: 18px;
+    
+}
+
+.form-group p{
+    font-weight: bold;
+}
+
+form label{
+    color: white; 
+     font-weight: bold; 
+    text-align: left;
+}

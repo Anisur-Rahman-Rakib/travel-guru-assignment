@@ -14,6 +14,7 @@ import Sundorban from './Component/Sundorban/Sundorban';
 import Sremongul from './Component/Sremongul/Sremongul';
 import Login from './Component/Login/Login';
 import Notfound from './Component/Notfound/Notfound';
+import BookingDetails from './Component/BookingDetails/BookingDetails';
 
 function App() {
   return (
@@ -44,6 +45,10 @@ function App() {
           </Route>
           <Route path="/Login">
           <Login/>
+          </Route>
+
+          <Route path="/BookingDetails">
+          <BookingDetails></BookingDetails>
           </Route>
           {/* <PrivateRoute path="/hotel/:id">
            <Hotel/>

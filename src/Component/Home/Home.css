@@ -4,15 +4,23 @@
   bottom: 0;
   left: 0;
   right: 0;
+  
+ 
+}
+.imgStyle{
+  height:210px ;
  
 }
 .customdeck{
   width: 80%;
   float:right;
+ 
 }
 .CustomCard{
  position: relative;
+ height: 400px;
  margin: 100px 0px 0px 0px;
+ border-radius:40px !important;
 }
 
 .buttonStyle{

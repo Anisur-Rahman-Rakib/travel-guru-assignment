@@ -34,9 +34,14 @@ const Home = () => {
 </Card>
 {/* 1st card */}
    <Card className="CustomCard">
-     <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdsA4enN3WE7VvJB7jU18LmUlTNjMQ0RNAjQ&usqp=CAU" />
+     <Card.Img className='imgStyle' variant="top" src="https://i.ibb.co/SR7w2tb/sundorbon.png" />
      <Card.Body>
        <Card.Title>Sundorban</Card.Title>
+
+       {/* <a href="https://ibb.co/BqK2myb"><img src="https://i.ibb.co/SR7w2tb/sundorbon.png" alt="sundorbon" border="0"></a> */}
+
+
+
       
      </Card.Body>
      <Card.Footer>
@@ -47,9 +52,16 @@ const Home = () => {
    </Card>
 
    <Card className="CustomCard lastCard">
-     <Card.Img variant="top" src="https://travelbd.xyz/en/wp-content/uploads/2018/09/teagarden_sylhet_beautifulbangladesh-2.jpeg" />
+     <Card.Img className='imgStyle' variant="top" src="https://i.ibb.co/6Bwd7wz/Sreemongol.png" />
      <Card.Body>
        <Card.Title>Sreemangal</Card.Title>
+
+
+       {/* <a href="https://ibb.co/NSC4dC5"><img src="https://i.ibb.co/6Bwd7wz/Sreemongol.png" alt="Sreemongol" border="0"></a> */}
+
+
+
+
        
      </Card.Body>
      <Card.Footer>

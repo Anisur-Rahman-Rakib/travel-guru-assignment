@@ -9,7 +9,7 @@ const Manu = () => {
            <div className='imgstyle'>  <img src={logo} alt=""/></div>
           <div>
           <nav>
-               <Link to="/shop">shop</Link>
+               <Link to="/Home">Home</Link>
                <Link to="/Coxbazer">Coxbazer</Link>
                <Link to="Sundorban">Sundorban</Link>
                <Link to="Sremongul">Sremongul</Link>

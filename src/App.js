@@ -15,14 +15,20 @@ import Sremongul from './Component/Sremongul/Sremongul';
 import Login from './Component/Login/Login';
 import Notfound from './Component/Notfound/Notfound';
 import BookingDetails from './Component/BookingDetails/BookingDetails';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+
+import { createContext } from 'react';
+import { useState } from 'react';
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser ,setloggedInUser] = useState({});
   return (
     <div className="App">
      
      {/* <Home></Home> */}
 
-
+     <UserContext.Provider value={[loggedInUser, setloggedInUser]} >
 
      {/* <p> {logInUser.name} </p> */}
     <Router>
@@ -47,12 +53,9 @@ function App() {
           <Login/>
           </Route>
 
-          <Route path="/BookingDetails">
+          <PrivateRoute path="/BookingDetails">
           <BookingDetails></BookingDetails>
-          </Route>
-          {/* <PrivateRoute path="/hotel/:id">
-           <Hotel/>
-         </PrivateRoute> */}
+          </PrivateRoute>
          <Route path="*">
           <Notfound/>
           </Route>
@@ -62,7 +65,7 @@ function App() {
 
 
 
-
+    </UserContext.Provider>
 
     </div>
   );
